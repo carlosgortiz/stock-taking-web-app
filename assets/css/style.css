@@ -35,7 +35,7 @@ a[href*='.css']::after {
     margin-left: 3px;
 }
 
-nav ul {
+nav ul.menu {
     display: flex;
     justify-content: space-between;
     min-width: 400px;
@@ -118,7 +118,7 @@ article {
 }
 
 ._layer {
-    background-color: var(--light);
+    background-color: var(--navlink-color);
 	margin-bottom:4px;
 	border-radius:2px;
 	width:28px;
