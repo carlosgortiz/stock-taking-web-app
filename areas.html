@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Inventario de computadoras por area</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/listaLA.css">
+</head>
+<header>
+    <h1>Stock taking</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="areas.html">Stock</a></li>
+            <li><a href="#">Guarantee</a></li>
+            <li><a href="licencias.html">Licenses</a></li>
+            <li><a href="#">Log out</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger">
+      <div class="_layer -top"></div>
+      <div class="_layer -mid"></div>
+      <div class="_layer -bottom"></div>
+    </div>
+
+    <nav class="menuppal">
+      <ul>
+        <li><a href="#">Opción 1</a></li>
+        <li><a href="#">Opción 2</a></li>
+        <li><a href="#">Opción 3</a></li>
+        <li><a href="#">Opción 4</a></li>
+      </ul>
+    </nav>
+
+</header>
+<body>
+    <div>
+        <div class="titulo">
+          <h1>Inventario de computadoras por area</h1>
+        </div>
+        <div class="secagregar">
+          <div>
+            <label>No. de computadora</label>
+            <input id="compnum" type="text" class="compnum" placeholder="ID">
+            <input id="IdA" type="hidden">
+          </div>
+          <div>
+            <label>Area</label>
+            <input id="area" type="text" class="area" placeholder="Departamento">
+          </div>
+          <div>
+            <label>Ubicacion</label>
+            <input id="ubicacion" type="text" class="ubicacion" placeholder="Direccion">
+          </div>
+        </div>
+        <div class="secbtn">
+          <div>
+            <button type="button" class="btnguardar" id="btnguardar">Guardar</button>
+          </div>
+          <div>
+            <button type="button" class="btnlimpiar" id="btnlimpiar">Limpiar</button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <table id="tblData" class="tabla ,espacio">
+              <thead>
+                <tr>
+                  <th class="stlcomp">No. de computadora</th>
+                  <th class="stlarea"> Area</th>
+                  <th class="stlub">Ubicacion</th>
+                  <th class="stact">Action</th>
+                </tr>
+              </thead>
+              <tbody> 
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/areas.js"> </script> 
+</body> 
+</html>
+
