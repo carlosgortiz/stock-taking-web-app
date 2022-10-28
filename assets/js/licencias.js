@@ -1,9 +1,8 @@
-var emptyRow = "<tr><td colspan='5'> Sin Regristros</td></tr>"; // colspan es dependiendo de las columnas que tengan
+var emptyRow = "<tr><td colspan='5'> Sin Registros</td></tr>";
 $(document).ready(function () {
   loadDataFromLocal();
   $('#tblData').on('click', '.btneditar', function () {
 
-    //cambiar el nombre de sus variables, id y clases en todo el archivo
     var nolic = $(this).parent().parent().find(".nolic").html();
     var pc = $(this).parent().parent().find(".pc").html();
     var vigencia = $(this).parent().parent().find(".vigencia").html();
@@ -51,13 +50,13 @@ function addEmptyRow() {
 }
 
 function loadDataFromLocal() {
-  let localData = localStorage.getItem('localDataLicencias'); // cambiar en todo el archivo donde aparezca getitem y setitem la terminacion de 'LocalDataXXX' por su nomenclatura
+  let localData = localStorage.getItem('localDataLicencias');
   if (localData) {
     $("#tblData tbody").html("");
     let localArray = JSON.parse(localData);
     let index = 1;
     localArray.forEach(element =>
-      //modificar tabla de acuerdo a sus columnas con clases, id etc
+
        {
       let dynamicTR = "<tr>";
       dynamicTR = dynamicTR + "<td class='nolic'  data-id=" + element.idL + ">" + element.nolic + "</td>";

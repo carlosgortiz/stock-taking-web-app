@@ -1,4 +1,4 @@
-var emptyRow = "<tr><td colspan='4'> No Records Available</td></tr>";
+var emptyRow = "<tr><td colspan='4'> Sin registros</td></tr>";
 $(document).ready(function () {
   loadDataFromLocal();
   $('#tblData').on('click', '.btneditar', function () {
@@ -126,4 +126,15 @@ function deleteDataFromLocal(idA) {
   }
   localStorage.setItem('localDataAreas', JSON.stringify(localArray));
   loadDataFromLocal();
+}
+let autocomplete;
+
+function initAutocomplete(){
+  autocomplete = new google.maps.places.Autocomplete(
+    document.getElementById('ubicacion'),
+    {
+      types: ['establishment'],
+      componentRestrictions: {'country': ['MX']},
+      fields: ['place_id', 'geometry', 'name']
+    });
 }
