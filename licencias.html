@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Inventario de computadoras por area</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/listaLA.css">
+</head>
+<header>
+    <h1>Stock taking</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="areas.html">Stock</a></li>
+            <li><a href="#">Guarantee</a></li>
+            <li><a href="licencias.html">Licenses</a></li>
+            <li><a href="#">Log out</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger">
+      <div class="_layer -top"></div>
+      <div class="_layer -mid"></div>
+      <div class="_layer -bottom"></div>
+    </div>
+
+    <nav class="menuppal">
+      <ul>
+        <li><a href="#">Opción 1</a></li>
+        <li><a href="#">Opción 2</a></li>
+        <li><a href="#">Opción 3</a></li>
+        <li><a href="#">Opción 4</a></li>
+      </ul>
+    </nav>
+
+</header>
+<body>
+    <div>
+        <div class="titulo">
+          <h1>Inventario de Licencias</h1>
+        </div>
+        <div class="secagregar">
+          <!-- esta es la seccion de input modificar de acuerdo a su tabla clases,etc -->
+          <div>
+            <label>No. de licencia</label>
+            <input id="nolic" type="text" class="nolic" placeholder="No. Licencia">
+            <input id="IdL" type="hidden">
+          </div>
+          <div>
+            <label>PC asignada</label>
+            <input id="pc" type="text" class="pc" placeholder="No. PC">
+          </div>
+          <div>
+            <label>Vigencia</label>
+            <input id="vigencia" type="date" class="vigencia" placeholder="Fecha de vencimiento">
+          </div>
+          <div>
+            <label>Descripcion</label>
+            <input id="desc" type="text" class="desc" placeholder="Programa">
+          </div>
+        </div>
+        <div class="secbtn">
+          <div>
+            <button type="button" class="btnguardar" id="btnguardar">Guardar</button>
+          </div>
+          <div>
+            <button type="button" class="btnlimpiar" id="btnlimpiar">Limpiar</button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <table id="tblData" class="tabla ,espacio">
+              <!-- modificar tabla de acuerdo a sus encabezados -->
+              <thead>
+                <tr>
+                  <th class="stllic">No. de Licencia</th>
+                  <th class="stlpc"> PC asignada</th>
+                  <th class="stlvig">Vigencia</th>
+                  <th class="stldesc">Descripcion</th>
+                  <th class="stlact">Accion</th>
+                </tr>
+              </thead>
+              <tbody> 
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/licencias.js"> </script> 
+</body> 
+</html>

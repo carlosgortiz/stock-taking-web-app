@@ -1,0 +1,66 @@
+
+.titulo{
+    background-color: #369;
+    font-size: larger;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+  }
+  
+  .secagregar{
+    display: flex;
+    justify-content: end;
+    margin: 2vh;
+  }
+  
+  .secbtn {
+    display: flex;
+    justify-content: end;
+    margin: 2vh;
+  }
+  
+  .btnagregar{
+    background-color: azure;
+  }
+  
+  .espacio{
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .tabla{
+    border: solid;
+    width: 100%;
+    text-align: left;
+    height: 80px;
+    margin: 25px 0;
+  }
+  
+  th, td{
+    padding: 1vh;
+  }
+  
+  th, tr, td{
+    border: solid;
+  }
+  
+  table{
+    border-collapse: collapse;
+  }
+  
+  .stlcomp, .stlarea{
+    width: 10%;
+  }
+  
+  .stlub{
+    width: 65%;
+  }
+  
+  label, .btnguardar, .btnlimpiar{
+    margin-left: 1vh;
+  }
+  
+  .ubicacion{
+    width: 500px;
+  }
