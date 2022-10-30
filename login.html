@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <title>LogIn Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <img src="./assets/image/login.png" alt="imagen mtto.tecnologia" />
+        <a href="#" class="login-hero">LogIn</a>
+       
+    </div>
+    <section class="modal-login">
+        <div class="modal-container-login">
+            <img src="./assets/image/img-modal-login.png" alt="imagen tecnologia" class="modal-img-login">
+            <h2 class="modal-title-login">¡Bienvenido a Highlander Tech Inventory!</h2>
+            <p class="modal-parrafo-login">Manejo de invetarios de equipos de computo, con el fin de proporcionar el
+                contacto de primer nivel
+                y soluciones a problemas técnicos de nuestros clientes, logrando así dar seguimiento, encaminar y redirigir
+                problemas a los recursos adecuados.</p>
+            <a href="#" class="modal-cerrar-login">Cerrar</a>
+        </div>
+    </section>
+    <section class="modal-formulario">
+        <div class="modal-container-formulario">
+            <h1>Ingresa tus datos</h1>
+            <form id="login">
+                <table>
+                    <tr>
+                        <th>
+                            <h2>Usuario</h2>
+                        </th>
+                        <td>
+                            <input id="usuario" type="text" size="20" placeholder="Admin" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h2>Contraseña</h2>
+                        </th>
+                        <td>
+                            <input id="password" size="20" placeholder="...." />
+                        </td>
+                    </tr>
+                </table>
+                <button id="borrar" type="reset">RESET</button>
+                <a href="./index.html"><button id="boton" target="_parent">LOG IN</button></a>
+            </form>
+        </div>
+    </section>
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
