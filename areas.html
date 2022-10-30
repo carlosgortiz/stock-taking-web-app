@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es">
 
 <head>
-    <title>Inventario de computadoras por area</title>
+    <title>Inventario de computadoras por área</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -10,31 +10,28 @@
     <link rel="stylesheet" href="assets/css/listaLA.css">
 </head>
 <header>
-    <h1>Stock taking</h1>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="areas.html">Stock</a></li>
-            <li><a href="#">Guarantee</a></li>
-            <li><a href="licencias.html">Licenses</a></li>
-            <li><a href="#">Log out</a></li>
-        </ul>
-    </nav>
+  <h1>Almacén e Inventario</h1>
+  <nav>
+    <ul class="menu">
 
-    <div class="hamburger">
-      <div class="_layer -top"></div>
-      <div class="_layer -mid"></div>
-      <div class="_layer -bottom"></div>
-    </div>
+      <li><a href="login.html">Cerrar sesión</a></li>
+    </ul>
+  </nav>
 
-    <nav class="menuppal">
-      <ul>
-        <li><a href="#">Opción 1</a></li>
-        <li><a href="#">Opción 2</a></li>
-        <li><a href="#">Opción 3</a></li>
-        <li><a href="#">Opción 4</a></li>
-      </ul>
-    </nav>
+  <div class="hamburger">
+    <div class="_layer -top"></div>
+    <div class="_layer -mid"></div>
+    <div class="_layer -bottom"></div>
+  </div>
+
+  <nav class="menuppal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="areas.html">Áreas</a></li>
+      <li><a href="#">Garantías</a></li>
+      <li><a href="licencias.html">Licencias</a></li>
+    </ul>
+  </nav>
 
 </header>
 <body>
@@ -49,12 +46,12 @@
             <input id="IdA" type="hidden">
           </div>
           <div>
-            <label>Area</label>
+            <label>Área</label>
             <input id="area" type="text" class="area" placeholder="Departamento">
           </div>
           <div>
-            <label>Ubicacion</label>
-            <input id="ubicacion" type="text" class="ubicacion" placeholder="Direccion">
+            <label>Ubicación</label>
+            <input id="ubicacion" type="text" class="ubicacion" placeholder="Dirección">
           </div>
         </div>
         <div class="secbtn">
@@ -71,9 +68,9 @@
               <thead>
                 <tr>
                   <th class="stlcomp">No. de computadora</th>
-                  <th class="stlarea"> Area</th>
-                  <th class="stlub">Ubicacion</th>
-                  <th class="stact">Action</th>
+                  <th class="stlarea"> Área</th>
+                  <th class="stlub">Ubicación</th>
+                  <th class="stact">Acción</th>
                 </tr>
               </thead>
               <tbody> 
@@ -85,6 +82,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/areas.js"> </script> 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgHFHAWc-iJtVOHtZBkMKQcTegavnK3ys&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="./assets/js/script.js"></script>
 </body> 
 </html>
 
