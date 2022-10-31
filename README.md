@@ -34,11 +34,14 @@ Una página web que permite mayor control de inventario de equipo de cómputo y 
 ```
 ## Prototipo
 ![image](https://user-images.githubusercontent.com/111394587/199123506-fc36a6e3-1166-43e9-99e0-27226183e5af.png)
-![image]([https://user-images.githubusercontent.com/111394587/199123506-fc36a6e3-1166-43e9-99e0-27226183e5af.png](https://user-images.githubusercontent.com/111394587/199123131-39825bb0-5723-45d9-aea5-50bca933f636.png))
-![image](https://user-images.githubusercontent.com/111394587/199123506-fc36a6e3-1166-43e9-99e0-27226183e5af.png)
-![image](![image](https://user-images.githubusercontent.com/111394587/199123506-fc36a6e3-1166-43e9-99e0-27226183e5af.png)
+![image](https://user-images.githubusercontent.com/111394587/199123131-39825bb0-5723-45d9-aea5-50bca933f636.png)
+![image](https://user-images.githubusercontent.com/111394587/199123326-c01476d7-bfc2-4eab-a313-f2f3ca12230d.png)
+![image](https://user-images.githubusercontent.com/111394587/199123407-863f83fa-c49b-4aa4-937e-16c3ea9d69c0.png)
 
 ## API que se utilizaran
 - Google AutoComplete
 - Google Search
 - DummyJSON
+
+## URL
+https://carlosgortiz.github.io/stock-taking-web-app/login.html
