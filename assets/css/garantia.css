@@ -1,7 +1,6 @@
 
 #body-garantias {
-  background:#13293d ;
- 
+  background:#ececec ;
 }
 
 #title-garantias {
@@ -11,10 +10,14 @@
 }
 
 tbody {
+    width:100%;
     background-color: #e4f0f5;
+    display:flex;
+    justify-content:center;
 }
 
 #tabla {
+   
     border-collapse: collapse;
     border: 2px solid rgb(200, 200, 200);
     letter-spacing: 1px;
@@ -25,7 +28,7 @@ tbody {
 td,
 th {
     border: 1px solid rgb(190, 190, 190);
-    padding: 5px 10px;
+    padding: 10px 60px;
 }
 
 #encabezado,
@@ -35,7 +38,7 @@ th3,
 th4,
 th5,
 th6 {
-    background-color:#c6aeae;
+    background-color:#fff;
     border: 2px solid rgb(54, 52, 52);
         font-weight: 300;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -44,9 +47,11 @@ th6 {
 td {
     text-align: center;
 }
-
 #leyenda {
-    background-color:#d83939 ;
-    color:#fff;
+    color:#13293d;
+   margin-left: .5rem;
+ }
+#rojo {
+    color:#d83939;
 }
-
+    
