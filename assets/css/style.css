@@ -2,21 +2,81 @@
   --dark: #13293d;
   --light: #fff;
   --navlink-color: #99a78d;
+
+  --negro: #393939;
+	--blanco: #ececec;
+	--sombra-ppal: #c9c9c9;
+	--sombra-sec: #ffffff;
+	--borde-negro: #00000050;
+	--marcado: rgb(127, 195, 255);
+	/* Tipografía */
+	--tipo-principal: Helvetica, Arial, sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 1%;
   background-color: var(--dark);
   color: var(--light);
+
+  line-height: 1.3;
+  font-size: 100%;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+	font-size: 100%;
+  min-height: 100vh;
+  background-color: var(--blanco);
+	hyphens: auto;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+  max-width: 96%;
+
+  font-family: var(--tipo-principal);
+	font-size: 100%;
+	line-height: 1.4em;
+	min-height: 100vh;
+	background-color: var(--blanco);
+	color: var(--negro);
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+li {
+	list-style-type: none;
 }
 
 h1 {
@@ -35,12 +95,6 @@ a[href*='.css']::after {
   margin-left: 3px;
 }
 
-nav ul.menu {
-  display: flex;
-  justify-content: space-between;
-  min-width: 200px;
-}
-
 nav a {
   background-color: unset;
   color: var(--navlink-color);
@@ -52,11 +106,10 @@ nav a:hover {
   color: var(--light);
 }
 
-main {
+nav ul.menu {
   display: flex;
-  flex: 1 1 0;
-  max-width: 96%;
-  margin: 2% auto;
+  justify-content: space-between;
+  min-width: 200px;
 }
 
 article {
@@ -73,24 +126,6 @@ article ul {
   margin-left: 5%;
   font-size: 110%;
   list-style: circle;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  background-color: var(--dark);
-  color: var(--light);
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  main {
-    max-width: 1200px;
-  }
 }
 
 .hamburger {
@@ -202,4 +237,88 @@ footer {
 .menuppal ul li a:hover {
   text-decoration: none;
   color: #333;
+}
+
+.carrousel {
+	width: 90%;
+	max-width: 120em;
+  /*margin: 2em;*/
+	padding: 2em;
+	color: var(--negro);
+	transition: all 0.4s ease;
+	border-radius: 1em;
+	background-color: var(--blanco);
+	box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+	overflow: hidden;
+  
+}
+
+.carrousel .grande {
+	width: 200%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--negro);
+	transition: all 0.4s ease;
+	border-radius: 1em;
+	background-color: var(--blanco);
+	box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+	padding: 2em;
+	transition: all 0.5s ease;
+	transform: translateX(0%);
+}
+
+.carrousel .img {
+	width: calc(100% / 2 - 2em);
+  height: 50vh;
+	min-height: 10vh;
+	color: var(--negro);
+	transition: all 0.4s ease;
+	border-radius: 1em;
+	background-color: var(--blanco);
+	box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .puntos {
+	width: 100%;
+	margin: 1em 0 0;
+	padding: 0.4em;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrousel .punto {
+	width: 2em;
+	height: 2em;
+	margin: 1em 1em 0;
+	color: var(--negro);
+	transition: all 0.4s ease;
+	border-radius: 1em;
+	background-color: var(--blanco);
+	box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .punto.activo {
+	background-color: lightblue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
 }

@@ -1,6 +1,10 @@
 
 #body-garantias {
   background:#ececec ;
+<<<<<<< HEAD
+=======
+
+>>>>>>> ceb5987573bb14cc83cdae899924470307568a87
 }
 
 #title-garantias {
@@ -12,8 +16,13 @@
 tbody {
     width:100%;
     background-color: #e4f0f5;
+<<<<<<< HEAD
     display:flex;
     justify-content:center;
+=======
+    display: flex;
+    justify-content: center;
+>>>>>>> ceb5987573bb14cc83cdae899924470307568a87
 }
 
 #tabla {
@@ -23,6 +32,7 @@ tbody {
     letter-spacing: 1px;
     font-family: sans-serif;
     font-size: 1rem;
+    margin: 2vh;
 }
 
 td,
@@ -48,10 +58,17 @@ td {
     text-align: center;
 }
 #leyenda {
+<<<<<<< HEAD
     color:#13293d;
    margin-left: .5rem;
  }
 #rojo {
     color:#d83939;
+=======
+    background-color:#d83939 ;
+    color:#fff;
+    margin: 2vh;
+
+>>>>>>> ceb5987573bb14cc83cdae899924470307568a87
 }
     
